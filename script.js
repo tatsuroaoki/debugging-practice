@@ -59,6 +59,10 @@ function clearGPA(){
 
 // Clears content in form fields.
 function clearFormFields(){
+	let fields = document.querySelectorAll("input[type=text]");
+	for (let i = 0; i < fields.length; i++) {
+		fields[i].value = "";
+	}
 	// TODO: implement this function.
 }
 
